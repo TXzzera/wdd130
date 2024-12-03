@@ -1,4 +1,4 @@
-:root{
+:root {
   --smoky-black: #141204;
   --Celestial-Blue: #15A3EF;
   --White: #FFFFFF;
@@ -11,16 +11,16 @@
   --font: "ParaType", serif;
 }
 
- h1, h2{
-  margin: 10;
-  padding: 10;
+h1, h2 {
+  margin: 10px;
+  padding: 10px;
   font-family: var(--heading-font);
   color: var(--accent2-color);
 }
 
-body, p{
-  margin: 20;
-  padding: 20;
+body, p {
+  margin: 20px;
+  padding: 20px;
   font-family: var(--font);
   font-size: 20px;
   color: var(--primary-color);
@@ -54,15 +54,15 @@ header nav a {
 .hero {
   position: relative;
   text-align: center;
-  
 }
 
 .hero img {
   width: 100%;
-  display: block;
+  max-height: 1000px;
+  object-fit: cover;
   opacity: 0.5;
 }
-  
+
 .hero h1 {
   position: absolute;
   top: 10%;
@@ -83,7 +83,6 @@ header nav a {
   border-radius: 8px;
   width: 90%;
   text-align: justify;
- 
 }
 
 .hero article img {
@@ -91,18 +90,96 @@ header nav a {
   max-width: 300px;
   margin: 0 1rem;
   opacity: 1;
-  box-shadow: 3px 3px 3px 3px var(--smoky-black);
+  box-shadow: 2px 2px 6px rgb(250, 250, 250);
 }
 
-.photographs figure img {
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10%;
+  margin-left: -10%;
+  background-color: white;
+}
+
+.history h2 {
+  font-size: 36px;
+  color: var(--accent2-color);
+  text-align: center; 
+  margin-bottom: 250px;
+  position: absolute;
+  margin-left: 27.5%;
+}
+
+.history img {
+  width: 500px;
+  margin: 0 100px;
+}
+
+.history-text {
+  font-size: 18px;
+  color: var(--primary-color);
+  line-height: 1.6;
+  margin: 0 30px;
+  margin-left: 10%;
+  line-height: 100%;
+}
+
+.history-text-left {
+  text-align: left;
+}
+
+.history-text-right {
+  text-align: right;
+}
+
+.enjoy {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  
+  gap: 10px;                              
+  padding: 100px 1%;                       
+  background-color: var(--White);  
+  justify-items: center; 
+  margin: auto;
+}
+
+.enjoy h2 {
+  text-align: center;
+  font-size: 36px;
+  color: var(--accent2-color);
+  margin: 10px;
+  position: absolute;
+  top: 1100px;
+  left: 48%;
+  transform: translateX(-50%);
+}
+
+.photographs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  
+  justify-items: center;
+}
+
+figure {
+  margin: 0;
+  text-align: center; 
+}
+
+figure img {
+  width: 200px;
+  height: auto;
   padding: 5px;
-  box-shadow: 5px 5px 5px 5px var(--smoky-black);
-
-}
-.photographs figure {
-  text-decoration: underline;
-  line-height: 40px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); 
+  margin-right: 30px;
   
+}
+
+figcaption {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin-top: 5px;
+  font-weight: bold;
+  margin-left: -30px;
 }
 
 footer {
@@ -111,7 +188,7 @@ footer {
   padding: 1rem;
 }
 
-footer p{
+footer p {
   color: var(--secondary-color);
 }
 
