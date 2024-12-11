@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo6_200.png" width="200px">
+        <nav>
+           <a href="index.html">Home</a> 
+           <a href="about.html">About us</a>
+           <a href="trips.html">Trips</a>
+           <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+    <main >
+        <section class = "companyinf">
+          <h1>Company Information</h1>
+          <p><strong>Office Adress:</strong> Paulista Avenue, 840 - Bela Vista, São Paulo - SP 01310-100</p>
+          <p><strong>Phone Numbers:</strong> (11) 91342-6746 /(11) 4444-4400</p>
+          <p><strong>E-mail Adress:</strong> contact.us@radicalrafting.com</p>
+          <div class = "map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.8061121248528!2d-46.65136838804914!3d-23.56561340465504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b88707ac57%3A0x2b1425bc661953ad!2sAv.%20Paulista%2C%20840%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1733785455880!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
+
+        <section class = "employees">
+          <h1>Our Family</h1>
+            <figure>
+             <img src = "images/man1.jpg">
+             <figcaption>Andrew Clark "Head of Operations"</figcaption>
+           </figure> 
+           <figure>
+            <img src = "images/woman1.jpg">
+            <figcaption>Megan Park "Raft Guide"</figcaption>
+           </figure> 
+           <figure>
+            <img src = "images/man2.jpg">
+            <figcaption>Nelson Murray "Raft Guide"</figcaption>
+           </figure> 
+        </section>
+
+        <section class = "forms">
+            <h1>Talk to us</h1>
+            <form action="/sent" method="POST">
+        
+            <label for="username"><strong>Username:</strong></label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email"><strong>E-mail Address:</strong></label>
+            <input type="email" id="email" name="email" required><br>
+        
+            <label for="message"><strong>Message:</strong></label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        
+            <label for="inquiry"><strong>Select Message Type:</strong></label><br>
+            <input type="radio" id="general_inquiry" name="inquiry" value="General Inquiry">
+            <label for="general_inquiry">General Inquiry</label><br>
+
+            <input type="radio" id="reservation_question" name="inquiry" value="Reservation Question">
+            <label for="reservation_question">Reservation Question</label><br>
+
+            <input type="radio" id="website_question" name="inquiry" value="Website Question">
+            <label for="website_question">Website Question</label><br><br>
+
+            <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer> 
+        <p>© 2024 Radical Rafting, Bruno de Sousa Teixeira | São Paulo, Brazil</p>
+        <nav>
+            <a href="https://www.facebook.com/radical-rafting">
+                <img src="images/facebook.png" alt="Facebook" width="150px" height="120px">
+            </a>
+            <a href="https://www.instagram.com/radical-rafting">
+                <img src="images/instagram.jpeg" alt="Instagram" width="150px" height="120px">
+            </a>
+            <a href="https://www.x.com/radical-rafting">
+                <img src="images/x.jpeg" alt="X" width="150px" height="120px">
+            </a>
+        </nav>
+        <div>
+          <p><a href="about.html" target="_blank">Site Plan</a></p>
+          <p><a href="contact.html" target="_blank">Contact Us</a></p>
+        </div>
+           
+    </footer>
+</body>
+</html>
