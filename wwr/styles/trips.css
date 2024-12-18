@@ -61,98 +61,135 @@ header nav a {
   text-decoration: none;
   font-weight: bold;
   text-align: center;
+  border: 1px white; 
   padding: 5px 10px; 
   border-radius: 3px;
 
 }
 
-.companyinf {
-  position: relative;
+.contact {
   text-align: center;
-  
+  margin: 40px 0;
 }
 
-.companyinf .map{
-  margin: 10px;
+.contact h2 {
+  font-size: 2rem;
 }
 
-.employees{
+.contact a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact a:hover {
+  background-color: var(--accent2-color);
+}
+
+.trip-list {
   display: flex;
-  flex-wrap: wrap;        
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px; 
+  margin: 40px 0;
+  background-color:var(--primary-color);
+  color: var(--secondary-color); 
+  padding: 20px; 
+  border-radius: 10px;
+}
+
+.trip-list h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.trip-list .row {
+  display: flex; 
   justify-content: center; 
-  gap: 20px;              
-  margin: 10px;    
-  background-color: var(--accent2-color); 
-  margin-top: 20px;
+  gap: 20px; 
+  width: 100%; 
 }
 
-.employees h1{
-  color: var(--secondary-color);
-  position: absolute;
-}
-
-.employees img {
-  float: center;
-  width: 300px;
-  margin: 0 2rem;
-  box-shadow: 2px 2px 6px var(--primary-color);
-  background-color: var(--secondary-color);
-  margin-top: 100px;
-}
-
-.employees figcaption{
-  color: var(--secondary-color);
-  margin-bottom: 20px;
-}
-
-figure {
-  margin: 0;
+.trip-list .row div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
   text-align: center; 
 }
 
-figure img {
-  width: 200px;
-  height: auto;
-  padding: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); 
-  margin-right: 30px;
-  
+.trip-list img {
+  width: 300px; 
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px; 
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-figcaption {
-  font-size: 16px;
-  color: var(--primary-color);
-  margin-top: 5px;
-  font-weight: bold;
-  margin-left: -30px;
+.trip-list h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin: 10px 0;
 }
 
-.forms {
-  max-width: 600px;
-  margin: 40px auto;
+.trip-list p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.trip-list img:hover {
+  opacity: 0.8;
+  transform: scale(1.1); 
+}
+
+.trip-list > div:nth-child(2) {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly; 
+
+}
+
+.trip-list > div:nth-child(3) { 
+  margin-top: 20px;
+  width: auto; 
+}
+
+.table h4 {
+  text-align: center; 
+  margin: 20px auto; 
+  display: block;
+  width: 100%;
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+  font-size: 2rem;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.table th, .table td {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
   text-align: center;
 }
 
-.forms form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-
-.forms input, .forms textarea, .forms button {
-  padding: 10px;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-}
-
-.forms button {
-  background-color: var(--accent1-color);
+.table th {
+  background-color: var(--primary-color);
   color: var(--secondary-color);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
+
+.table td {
+  background-color: var(--secondary-color);
+}
+  
 
 footer {
   display: flex;
